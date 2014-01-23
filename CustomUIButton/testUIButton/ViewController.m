@@ -46,11 +46,11 @@
     
     // *** Create programmatic iOS 7 button with image backgrounds ***
     
-    // Using UIButtonTypeRoundedRect we get iOS 7 button behavior on top of
-    //  our background image. (You won't need a pressed image, since iOS 7
-    //  uses fading/transparency to show presses)
-    //  The tint color will propogate if we use this type of button
-    
+        // Using UIButtonTypeRoundedRect we get iOS 7 button behavior on top of
+        //  our background image. (You won't need a pressed image, since iOS 7
+        //  uses fading/transparency to show presses)
+        //  The tint color will propogate if we use this type of button
+
         UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [self.view addSubview:button];
         [button setTitle:@"Hello" forState:UIControlStateNormal];
@@ -58,11 +58,11 @@
         [button sizeToFit];
         button.center = CGPointMake(200, 50);
 
-    // We'll create a resizable image so it can stretch!
-    //  Button@2x.png is 40x40, for a non-retina it's scaled by the iPhone to 20x20 (1/2 resolution)
-    //  The edge insets are not in retina pixels, instead they use the point system (i.e. non-retina size)
-    // Based on the provided image, we use the width and height of 20 points and divide by 2. i.e. 20/2 = 10
-    [button setBackgroundImage:[[UIImage imageNamed:@"Button.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 10, 10, 10)] forState:UIControlStateNormal];
+        // We'll create a resizable image so it can stretch!
+        //  Button@2x.png is 40x40, for a non-retina it's scaled by the iPhone to 20x20 (1/2 resolution)
+        //  The edge insets are not in retina pixels, instead they use the point system (i.e. non-retina size)
+        // Based on the provided image, we use the width and height of 20 points and divide by 2. i.e. 20/2 = 10
+        [button setBackgroundImage:[[UIImage imageNamed:@"Button.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 10, 10, 10)] forState:UIControlStateNormal];
     
     // *** Create programmatic Custom Buttons with background images ***
     
