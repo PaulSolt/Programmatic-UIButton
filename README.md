@@ -7,6 +7,8 @@ If you're working on a game or want to still add a little embellishment (like me
 
 There's really three options for creating the UIButton. You can create the standard iOS 7 button, a modified iOS 7 button, or a custom button (more work). Apple recommends that you don't add subviews to the UIButton, but it is possible, and it's something we're doing in Bomb Dodge.
 
+**Blog post:**: [Create iOS 7 UIButton in Code](http://iphonedev.tv/blog/2014/1/22/programmatic-uibutton-on-ios-70-create-a-uibutton-with-code)
+
 Animation Preview
 ---------------
 
